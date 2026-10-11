@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101525">
+<meta name="description" content="Digital Freedom : produits numériques, intelligence artificielle et solutions digitales pour tous.">
+<title>Digital Freedom | Your Digital Future</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:#0b1020;color:#f5f7ff;
+ font-family:Arial,Helvetica,sans-serif;line-height:1.7
+}
+header{
+ padding:20px 6%;display:flex;justify-content:space-between;
+ align-items:center;border-bottom:1px solid #29334b
+}
+.logo{font-size:21px;font-weight:900}
+.logo span{color:#73f0c0}
+nav a{color:#d6dced;text-decoration:none;margin-left:15px;font-size:14px}
+.hero{
+ padding:75px 7%;text-align:center;
+ background:radial-gradient(ellipse at top,#26365d,#0b1020 70%)
+}
+.badge{color:#73f0c0;font-weight:bold;letter-spacing:2px}
+h1{font-size:clamp(38px,7vw,65px);line-height:1.1;margin:20px 0}
+h1 span{color:#73f0c0}
+p{color:#b5bfd4}
+.hero p{max-width:680px;margin:20px auto;font-size:18px}
+.btn{
+ display:inline-block;margin:8px;padding:13px 20px;border-radius:10px;
+ text-decoration:none;font-weight:bold;background:#73f0c0;color:#071a17
+}
+.btn.secondary{background:transparent;border:1px solid #52617c;color:white}
+section{padding:55px 7%}
+h2{font-size:32px;line-height:1.2}
+.intro{text-align:center;margin-bottom:30px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{
+ background:linear-gradient(145deg,#18243c,#111827);
+ border:1px solid #2b3852;border-radius:18px;padding:24px;
+ display:flex;flex-direction:column;align-items:flex-start
+}
+.icon{font-size:35px}
+.card h3{font-size:21px;margin-bottom:4px}
+.card p{flex-grow:1}
+.card .btn{margin-left:0}
+.about{
+ background:#121b2e;border-top:1px solid #29334b;
+ border-bottom:1px solid #29334b
+}
+.contact{text-align:center}
+footer{
+ padding:25px 7%;border-top:1px solid #29334b;
+ color:#9eabc3;text-align:center;font-size:13px
+}
+button{
+ padding:9px 12px;border-radius:8px;border:1px solid #40506b;
+ background:#17223a;color:white;cursor:pointer
+}
+@media(max-width:600px){
+ header{padding:16px 5%;flex-wrap:wrap;gap:12px}
+ nav{width:100%;display:flex;justify-content:space-between}
+ nav a{margin:0;font-size:13px}
+ .hero{padding:55px 6%}
+ section{padding:42px 6%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="logo">DIGITAL <span>FREEDOM</span></div>
+ <nav>
+  <a href="#products" data-fr="Produits" data-en="Products">Produits</a>
+  <a href="#about" data-fr="À propos" data-en="About">À propos</a>
+  <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+  <button onclick="changeLanguage()" id="language">EN</button>
+ </nav>
+</header>
+
+<main>
+<section class="hero">
+ <div class="badge">DIGITAL FREEDOM INTERNATIONAL</div>
+
+ <h1 data-fr="Créez. Apprenez. <span>Évoluez.</span>"
+ data-en="Create. Learn. <span>Grow.</span>">
+ Créez. Apprenez. <span>Évoluez.</span>
+ </h1>
+
+ <p data-fr="Découvrez des produits numériques pratiques, des ressources sur l'intelligence artificielle et des solutions pour développer vos compétences dans le monde numérique."
+ data-en="Discover practical digital products, artificial intelligence resources, and solutions to develop your skills in today's digital world.">
+ Découvrez des produits numériques pratiques, des ressources sur l'intelligence artificielle et des solutions pour développer vos compétences dans le monde numérique.
+ </p>
+
+ <a class="btn" href="#products"
+ data-fr="Découvrir nos produits →"
+ data-en="Explore our products →">Découvrir nos produits →</a>
+
+ <a class="btn secondary" href="#about"
+ data-fr="Découvrir Digital Freedom"
+ data-en="Discover Digital Freedom">Découvrir Digital Freedom</a>
+</section>
+
+<section id="products">
+ <div class="intro">
+  <div class="badge">OUR DIGITAL STORE</div>
+  <h2 data-fr="Nos produits numériques"
+  data-en="Our Digital Products">Nos produits numériques</h2>
+  <p data-fr="Des guides pratiques pour apprendre et progresser à votre rythme."
+  data-en="Practical guides to help you learn and grow at your own pace.">
+  Des guides pratiques pour apprendre et progresser à votre rythme.
+  </p>
+ </div>
+
+ <div class="products">
+
+  <article class="card">
+   <div class="icon">✦</div>
+   <h3>AI Money Reset</h3>
+   <p data-fr="Un ebook pratique pour mieux organiser vos finances et découvrir comment l'IA peut vous aider à réfléchir à vos décisions financières."
+   data-en="A practical ebook to help organize your finances and explore how AI can support your financial decisions.">
+   Un ebook pratique pour mieux organiser vos finances et découvrir comment l'IA peut vous aider à réfléchir à vos décisions financières.
+   </p>
+   <a class="btn" href="https://qiktspdp.mychariow.online/prd_u2nsigmb" target="_blank" rel="noopener"
+   data-fr="Découvrir le guide ↗" data-en="Explore the guide ↗">Découvrir le guide ↗</a>
+  </article>
+
+  <article class="card">
+   <div class="icon">🌱</div>
+   <h3 data-fr="Grandir sans excès d'écrans"
+   data-en="Growing Up Beyond Screens">Grandir sans excès d'écrans</h3>
+   <p data-fr="Un guide pour aider les parents à accompagner les enfants vers des habitudes numériques plus équilibrées."
+   data-en="A guide to help parents support children in developing healthier digital habits.">
+   Un guide pour aider les parents à accompagner les enfants vers des habitudes numériques plus équilibrées.
+   </p>
+   <a class="btn" href="https://qiktspdp.mychariw.online/prd_h1nrpqdo" target="_blank" rel="noopener"
+   data-fr="Découvrir le guide ↗" data-en="Explore the guide ↗">Découvrir le guide ↗</a>
+  </article>
+
+  <article class="card">
+   <div class="icon">◎</div>
+   <h3 data-fr="Notre collection numérique"
+   data-en="Our Digital Collection">Notre collection numérique</h3>
+   <p data-fr="Explorez notre offre et découvrez les ressources disponibles dans la boutique Digital Freedom."
+   data-en="Explore our offer and discover the resources available in the Digital Freedom store.">
+   Explorez notre offre et découvrez les ressources disponibles dans la boutique Digital Freedom.
+   </p>
+   <a class="btn" href="https://qiktspdp.mychariow.online/prd_nltrq1wy" target="_blank" rel="noopener"
+   data-fr="Explorer la boutique ↗" data-en="Explore the store ↗">Explorer la boutique ↗</a>
+  </article>
+
+ </div>
+</section>
+
+<section class="about" id="about">
+ <div class="intro">
+  <div class="badge">ABOUT
